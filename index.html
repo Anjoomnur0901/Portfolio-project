@@ -16,24 +16,36 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"
       />
-  
-      <style>
+      
+      <link rel="stylesheet" href="style.css">
+     <!--Internal CSS
+      <style> 
         body {
           background-color: rgb(217, 215, 213);
           font-family: 'Roboto', sans-serif;
         }
-      </style>
+        header, #about{
+            background-color: red;
+        }
+      </style>-->
 </head>
 <body>
     <!--Navigation Bar-->
     <header>
         <nav>
-            <!--Relative Links-->
-            <a target="_self" href="index.html">Home</a>
-            <a target="_self" href="#about">About Me</a>
-            <a target="_self" href="#projects">Projects</a>
-            <a target="_self" href="#skills">Skills</a>
-            <a target="_self"  href="#contact">Contact Me</a>
+            <!---<header style="background-color: green;">--Inline css-->
+           
+                
+                    <ul>
+                        <li><a target="_self" href="index.html" class="nav-link">Home</a></li>
+                        <li><a target="_self" href="#about" id="link1">About Me</a></li>
+                        <li><a target="_self" href="#projects" class="nav-link">Projects</a></li>
+                        <li> <a target="_self" href="#skills" class="nav-link">Skills</a></li>
+                        <li><a target="_self"  href="#contact"class="nav-link">Contact Me</a></li>
+                    </ul>
+                    
+              
+         
             
         </nav>
     </header>
@@ -47,19 +59,22 @@
         
      <!--Section: Intro-->
     <section id="intro">
-        <h1>Anjoom Nur</h1>
-        <p><strong><em>Junior Software Engineer and AI enthusiast</em></strong></p>
-        <hr/>
+        <div class="card">
+            <h1 class="title">Anjoom Nur</h1>
+            <p><strong><em>Junior Software Engineer and AI enthusiast</em></strong></p>
+            <hr/>
+        </div>
     </section>
+        
       <!--Section: about me-->
-   <section id="about">
+   <section id="about" class="card">
     <h2>About Me</h2>
     <p><strong>Experience: </strong>1 year experience as Junior Software Engineer</p>
     <p><strong>Education:</strong> Bachelor of Science in Computer Science and Engineering at North South University<em><strong>(2018-2022)</strong></em></p>
     <p><strong>Education:</strong> Master of Science in Artificial Intelligence at Friedrich Alexander University<em><strong>(2024-Present)</strong></em></p>
    </section>
     <!--Section: Contact me-->
-    <section id="contact">
+    <section id="contact" class="card">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xnnavwgb" method="POST">
             <div>
@@ -125,7 +140,7 @@
         </form>
     </section>
     <!--Section: Skills-->
-    <section id="skills">
+    <section id="skills" class="card">
         <h2>Skills</h2>
         <ul>
             <li>Software Development<ul>
@@ -164,9 +179,9 @@
             </ul></li>
             <li>Currently I am Learning
                 <ul>
-                    <li><label for"genAI">Generative AI</label>
+                    <li><label for="genAI">Generative AI</label>
                         <progress id="genAI" value="25" max="100"></progress></li>
-                        <li><label for"nlp">NLP</label>
+                        <li><label for="nlp">NLP</label>
                             <progress id="nlp" value="40" max="100"></progress></li>
                 </ul>
             </li>
@@ -197,7 +212,7 @@
         </table>
     </section>
     <!--Section: Projects-->
-    <section id="projects">
+    <section id="projects" class="card">
         <h2>Projects</h2>
         <ul>
             <li><a target="blank" href="https://github.com/Anjoomnur0901/Brain-MRI-Tumor-Detection-for-Clinical-Research/tree/main">Brain Tumor Detection for Clinical Research</a><br>
@@ -213,14 +228,18 @@
     <footer>
         <p>Copyright researved by &copy; Anjoom</p>
         <a href="tel:01818967240"><i class="fa-solid fa-square-phone"></i></a>
-        <a href="mailto:nuranjoom@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
-        <a target="blank" href="https://github.com/Anjoomnur0901"><i class="fa-brands fa-linkedin"></i></a>
-        <a target="blank" href="https://www.linkedin.com/in/anjoom-nur-741b0b223/"><i class="fa-brands fa-github"></i></a>
+        <div class="social-media">
+            <a href="mailto:nuranjoom@gmail.com"><i class="fa-regular fa-envelope-open"></i></a>
+            <a target="blank" href="https://github.com/Anjoomnur0901"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="blank" href="https://www.linkedin.com/in/anjoom-nur-741b0b223/"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983526!2d90.34355869969482!3d23.794562358241187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1723533344164!5m2!1sen!2sbd" 
+            title="Home" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
     </footer>
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983526!2d90.34355869969482!3d23.794562358241187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1723533344164!5m2!1sen!2sbd" 
-        title="Home" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+   
 
 
   

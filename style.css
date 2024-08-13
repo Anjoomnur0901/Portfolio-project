@@ -1,0 +1,76 @@
+:root{ /*CSS3 Variables*/
+--primary-color: #4caf50;
+--secondary-color:#fff;
+--background-color:#f4f4f4;
+}
+
+body{
+    background-color: var(--background-color);
+    color: #333;
+    margin:0;
+    padding:0
+}
+header{
+    background-color: #4caf50;
+    color: var(--secondary-color);
+    text-align: center;
+}
+h1,h2{
+    color: var(--primary-color);
+}
+button{
+    background-color: var(--primary-color);
+    color:var(--secondary-color)
+}
+input, select, textarea{
+    
+}
+nav ul{
+    list-style: none;
+    color: var(--secondary-color);
+}
+nav ul li{
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+main{
+
+}
+table{
+
+}
+ul{
+    list-style:none;
+}
+th{
+    background-color: #6098b9;
+}
+button:hover{
+    background-color: red;
+}
+p{
+    font-size: 1rem;
+    font-weight:700;/*700 bold 800 extra bold,400 normal*/
+    font-style:italic;
+    font-family: "Roboto", sans-serif;
+    text-align:justify; /*left,right,center*/
+    text-transform: capitalize; /*uppercase, lowercase*/
+    /*text-decoration:overline,underline*,line-through*/
+    
+}
+h1{
+    font-size: 3rem;/* 1 rem = 16 pixels*/
+}
+footer{
+    background-color: var(--primary-color) ;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.social-media a{
+    color:var(--secondary-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
