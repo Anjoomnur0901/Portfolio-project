@@ -37,6 +37,12 @@
             
         </nav>
     </header>
+    <!--<template>
+        <div class="user-card">
+            <h2 class="user-name"></h2>
+            <h2 class="user-email"></h2>
+        </div>
+    </template>-->
     <main>
         
      <!--Section: Intro-->
@@ -65,12 +71,38 @@
                 <input id="age" name="age" type="number" min="18" max="100"/>
             </div>
             <div>
+                <span>Gender:</span>
+                <input id="male" name="male" value="male" type="radio" required/><span>Male</span>
+                <input id="female" name="female" value="female" type="radio" required/><span>Female</span>
+            </div>
+            <div>
                 <label for="email">Email:</label>
                 <input id="email" name="email" type="email" required/>
             </div>
             <div>
+                <label for="pass">Password</label>
+                <input id="pass" name="pass" type="Password" required/>
+            </div>
+            <div>
                 <label for="website">Website::</label>
                 <input id="website" name="website" type="url" accept="image/*"/>
+            </div>
+            <div>
+                <label for="experience">Experience:</label>
+                <input type="range" id="experience" min="1" max="20">
+                
+
+            </div>
+            <div>
+                <label for="prog">Your favourite programming language</label>
+                <input list="lang" id="prog" name="prog" required>
+                <datalist id="lang">
+                    <option value="C"></option>
+                    <option value="C++"></option>
+                    <option value="Java"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                </datalist><!--Autocomplete-->
             </div>
             <div>
                 <label for="img">Website::</label>
