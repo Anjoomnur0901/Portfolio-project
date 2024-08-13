@@ -26,21 +26,25 @@
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav>
-        <!--Relative Links-->
-        <a target="_self" href="index.html">Home</a>
-        <a target="_self" href="#about">About Me</a>
-        <a target="_self" href="#projects">Projects</a>
-        <a target="_self" href="#skills">Skills</a>
-        <a target="_self"  href="#contact">Contact Me</a>
+    <header>
+        <nav>
+            <!--Relative Links-->
+            <a target="_self" href="index.html">Home</a>
+            <a target="_self" href="#about">About Me</a>
+            <a target="_self" href="#projects">Projects</a>
+            <a target="_self" href="#skills">Skills</a>
+            <a target="_self"  href="#contact">Contact Me</a>
+            
+        </nav>
+    </header>
+    <main>
         
-    </nav>
      <!--Section: Intro-->
-    <header id="intro">
+    <section id="intro">
         <h1>Anjoom Nur</h1>
         <p><strong><em>Junior Software Engineer and AI enthusiast</em></strong></p>
         <hr/>
-    </header>
+    </section>
       <!--Section: about me-->
    <section id="about">
     <h2>About Me</h2>
@@ -51,21 +55,40 @@
     <!--Section: Contact me-->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://formspree.io/f/xnnavwgb" method="POST">
             <div>
                 <label for="name">Name:</label>
                 <input id="name" name="name" type="text" required/>
             </div>
             <div>
-
+                <label for="age">Age:</label>
+                <input id="age" name="age" type="number" min="18" max="100"/>
+            </div>
+            <div>
                 <label for="email">Email:</label>
                 <input id="email" name="email" type="email" required/>
+            </div>
+            <div>
+                <label for="website">Website::</label>
+                <input id="website" name="website" type="url" accept="image/*"/>
+            </div>
+            <div>
+                <label for="img">Website::</label>
+                <input id="img" name="img" type="file" pattern="https?://.+"/>
+            </div>
+            <div>
+                <label for="sub">Subject:</label>
+                <select name="sub" id="sub">
+                    <option value="inquiry">Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="job">Job Opportunity</option>
+                </select>
             </div>
            <div>
             <label for="message">Message:</label>
             <textarea id="message" name="message" cols="30" rows="10" required></textarea>
            </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button><!--3rd party api called formspree.io-->
             <button type="reset">Clear</button>
         </form>
     </section>
@@ -107,6 +130,14 @@
                 <li>OpenCV(Object Detection, Segmentation,classification), Auto annotation using SAM and YOLO</li>
                 <li>NLP(NLTK,Spacy)</li>
             </ul></li>
+            <li>Currently I am Learning
+                <ul>
+                    <li><label for"genAI">Generative AI</label>
+                        <progress id="genAI" value="25" max="100"></progress></li>
+                        <li><label for"nlp">NLP</label>
+                            <progress id="nlp" value="40" max="100"></progress></li>
+                </ul>
+            </li>
         </ul>
         <table border="1" cellpadding="5" cellspacing="0">
             <thead>
@@ -118,17 +149,16 @@
             <tbody>
                 <tr>
                     <td>Software Development</td>
-                    <td>Intermediate</td>
+                    <td rowspan="2">Intermediate</td>
 
                 </tr>
                 <tr>
                     <td>Software Quality Testing</td>
-                    <td>Intermediate</td>
 
                 </tr>
                 <tr>
                     <td>Artificial Intelligence</td>
-                    <td>Intermediate</td>
+                    <td>Basic</td>
 
                 </tr>
             </tbody>
@@ -139,11 +169,14 @@
         <h2>Projects</h2>
         <ul>
             <li><a target="blank" href="https://github.com/Anjoomnur0901/Brain-MRI-Tumor-Detection-for-Clinical-Research/tree/main">Brain Tumor Detection for Clinical Research</a><br>
-            <img src="./images/pituitary_image (3).png" alt="" height="200"/>
-            <img src="./images/pituitary_image (2).png" alt="" height="200"/>
+            <img src="./images/pituitary_image (3).png" alt="" height="100"/>
+            <img src="./images/pituitary_image (2).png" alt="" height="100"/>
+            <video  width="320"  controls ><source src="assets\video\big_buck_bunny_720p_1mb.mp4" type="video/mp4">Your Video do not support this type of video</video><!--type="video/mp4"-->
             </li>
         </ul>
     </section>
+    </main>
+   
     <!--Section: footer-->
     <footer>
         <p>Copyright researved by &copy; Anjoom</p>
@@ -152,6 +185,10 @@
         <a target="blank" href="https://github.com/Anjoomnur0901"><i class="fa-brands fa-linkedin"></i></a>
         <a target="blank" href="https://www.linkedin.com/in/anjoom-nur-741b0b223/"><i class="fa-brands fa-github"></i></a>
     </footer>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983526!2d90.34355869969482!3d23.794562358241187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1723533344164!5m2!1sen!2sbd" 
+        title="Home" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 
   
