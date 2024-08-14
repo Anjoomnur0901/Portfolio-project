@@ -11,6 +11,6 @@
 6. CSS Specificity(Specificity Calculator)
 7. Typography
 8. Box Model(height, width, margin, border, padding, margin)
-9. Background properties
-10. basic layout - float, positioning
-11. CSS3 Variables
+9. CSS3 Variables
+10. Designing a card
+
