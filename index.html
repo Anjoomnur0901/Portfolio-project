@@ -73,160 +73,204 @@
     <p><strong>Education:</strong> Master of Science in Artificial Intelligence at Friedrich Alexander University<em><strong>(2024-Present)</strong></em></p>
    </section>
     <!--Section: Contact me-->
-    <section id="contact" class="card">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xnnavwgb" method="POST">
-            <div>
-                <label for="name"><strong>Name:</strong></label>
-                <input id="name" name="name" type="text" required/>
-            </div>
-            <div>
-                <label for="age"><strong>Age:</strong></label>
-                <input id="age" name="age" type="number" min="18" max="100"/>
-            </div>
-            <div>
-                <span><strong>Select your gender: </strong></span>
-                <label class="radio-container">
-                    Male<input id="male" name="male" value="male" type="radio" required/>
-                </label>
-                <label class="radio-container">
-                    Female<input id="female" name="female" value="female" type="radio" required/>
-                </label>
-                
-               
-            </div>
-            <div>
-                <label for="email"><strong>Email:</strong></label>
-                <input id="email" name="email" type="email" required/>
-            </div>
-            <div>
-                <label for="pass"><strong>Password</strong></label>
-                <input id="pass" name="pass" type="Password" required/>
-            </div>
-            <div>
-                <label for="website"><strong>Website:</strong></label>
-                <input id="website" name="website" type="url" accept="image/*"/>
-            </div>
-            <div>
-                <label for="experience"><strong>Experience:</strong></label>
-                <input type="range" id="experience" min="1" max="20">
-                
-
-            </div>
-            <div>
-                <label for="prog"><strong>favourite programming language</strong> </label>
-                <input list="lang" id="prog" name="prog" required>
-                <datalist id="lang">
-                    <option value="C"></option>
-                    <option value="C++"></option>
-                    <option value="Java"></option>
-                    <option value="JavaScript"></option>
-                    <option value="Python"></option>
-                </datalist><!--Autocomplete-->
-            </div>
-            <div>
-                <label for="img"><strong>Website:</strong></label>
-                <input id="img" name="img" type="file" pattern="https?://.+"/>
-            </div>
-            <div>
-                <label for="sub"><strong>Subject:</strong></label>
-                <select name="sub" id="sub">
-                    <option value="inquiry">Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="job">Job Opportunity</option>
-                </select>
-            </div>
-           <div>
-            <label for="message"><strong>Message:</strong></label>
-            <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-           </div>
-            <button type="submit"><strong>Submit</strong></button><!--3rd party api called formspree.io-->
-            <button type="reset">Clear</button>
-        </form>
+        <div class="card">
+            <form action="https://formspree.io/f/xnnavwgb" method="POST">
+                <div>
+                    <label for="name"><strong>Name:</strong></label>
+                    <input id="name" name="name" type="text" required/>
+                </div>
+                <div>
+                    <label for="age"><strong>Age:</strong></label>
+                    <input id="age" name="age" type="number" min="18" max="100"/>
+                </div>
+                <div>
+                    <span><strong>Select your gender: </strong></span>
+                    <label class="radio-container">
+                        Male<input id="male" name="male" value="male" type="radio" required/>
+                    </label>
+                    <label class="radio-container">
+                        Female<input id="female" name="female" value="female" type="radio" required/>
+                    </label>
+                    
+                   
+                </div>
+                <div>
+                    <label for="email"><strong>Email:</strong></label>
+                    <input id="email" name="email" type="email" required/>
+                </div>
+                <div>
+                    <label for="pass"><strong>Password</strong></label>
+                    <input id="pass" name="pass" type="Password" required/>
+                </div>
+                <div>
+                    <label for="website"><strong>Website:</strong></label>
+                    <input id="website" name="website" type="url" accept="image/*"/>
+                </div>
+                <div>
+                    <label for="experience"><strong>Experience:</strong></label>
+                    <input type="range" id="experience" min="1" max="20">
+                    
+    
+                </div>
+                <div>
+                    <label for="prog"><strong>favourite programming language</strong> </label>
+                    <input list="lang" id="prog" name="prog" required>
+                    <datalist id="lang">
+                        <option value="C"></option>
+                        <option value="C++"></option>
+                        <option value="Java"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                    </datalist><!--Autocomplete-->
+                </div>
+                <div>
+                    <label for="img"><strong>Website:</strong></label>
+                    <input id="img" name="img" type="file" pattern="https?://.+"/>
+                </div>
+                <div>
+                    <label for="sub"><strong>Subject:</strong></label>
+                    <select name="sub" id="sub">
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job">Job Opportunity</option>
+                    </select>
+                </div>
+               <div>
+                <label for="message"><strong>Message:</strong></label>
+                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+               </div>
+                <button type="submit"><strong>Submit</strong></button><!--3rd party api called formspree.io-->
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+        
     </section>
     <!--Section: Skills-->
-    <section id="skills" class="card">
-        <h2>Skills</h2>
-        <ul>
-            <li>Software Development<ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React js</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>TypeScript</li>
-            </ul></li>
-            <li>Software Quality Testing<ul>
-                <li>Manual testing</li>
-                <li>Test Case Development</li>
-                <li>Agile Testing Methodology</li>
-                <li>API Testing Using Postman</li>
-                <li>Continuous Integration with Jenkins</li>
-                <li>Performance Testing using Jmeter</li>
-                <li>BDD (Behavior-Driven Development) with Cypress</li>
-                <li>Automated Test Scripts</li>
-                <li>Custom Command Creation</li>
-                <li>Test Runner Configuration</li>
-                <li>Test Data Management</li>
-                <li>Headless Browser Testing</li>
-                <li>Integration with Test Management Tool JIRA</li>
-            </ul></li>
-            <li>Artificial Intelligence<ul>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Scikit Learn</li>
-                <li>Pytorch</li>
-                <li>Keras with Tensorflow</li>
-                <li>OpenCV(Object Detection, Segmentation,classification), Auto annotation using SAM and YOLO</li>
-                <li>NLP(NLTK,Spacy)</li>
-            </ul></li>
-            <li>Currently I am Learning
-                <ul>
-                    <li><label for="genAI">Generative AI</label>
-                        <progress id="genAI" value="25" max="100"></progress></li>
-                        <li><label for="nlp">NLP</label>
-                            <progress id="nlp" value="40" max="100"></progress></li>
+    <section id="skills" class="skills">
+        <h2 class="skills__title">Skills</h2>
+        <div class="skills__container">
+            <div class="skills__category skills__category--development">
+                <h3 class="skills__category-title">Software Development</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item">HTML</li>
+                    <li class="skills__list-item">CSS</li>
+                    <li class="skills__list-item">JavaScript</li>
+                    <li class="skills__list-item">React.js</li>
+                    <li class="skills__list-item">Node.js</li>
+                    <li class="skills__list-item">Express.js</li>
+                    <li class="skills__list-item">MongoDB</li>
+                    <li class="skills__list-item">TypeScript</li>
                 </ul>
-            </li>
-        </ul>
-        <table border="1" cellpadding="5" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Technology</th>
-                    <th>Proficiency</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Software Development</td>
-                    <td rowspan="2">Intermediate</td>
-
-                </tr>
-                <tr>
-                    <td>Software Quality Testing</td>
-
-                </tr>
-                <tr>
-                    <td>Artificial Intelligence</td>
-                    <td>Basic</td>
-
-                </tr>
-            </tbody>
-        </table>
+            </div>
+            <div class="skills__category skills__category--testing">
+                <h3 class="skills__category-title">Software Quality Testing</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item">Manual Testing</li>
+                    <li class="skills__list-item">Test Case Development</li>
+                    <li class="skills__list-item">Agile Testing Methodology</li>
+                    <li class="skills__list-item">API Testing Using Postman</li>
+                    <li class="skills__list-item">Continuous Integration with Jenkins</li>
+                    <li class="skills__list-item">Performance Testing using JMeter</li>
+                    <li class="skills__list-item">BDD with Cypress</li>
+                    <li class="skills__list-item">Automated Test Scripts</li>
+                    <li class="skills__list-item">Custom Command Creation</li>
+                    <li class="skills__list-item">Test Runner Configuration</li>
+                    <li class="skills__list-item">Test Data Management</li>
+                    <li class="skills__list-item">Headless Browser Testing</li>
+                    <li class="skills__list-item">Integration with Test Management Tool JIRA</li>
+                </ul>
+            </div>
+            <div class="skills__category skills__category--ai">
+                <h3 class="skills__category-title">Artificial Intelligence</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item">Machine Learning</li>
+                    <li class="skills__list-item">Deep Learning</li>
+                    <li class="skills__list-item">Scikit Learn</li>
+                    <li class="skills__list-item">PyTorch</li>
+                    <li class="skills__list-item">Keras with TensorFlow</li>
+                    <li class="skills__list-item">OpenCV (Object Detection, Segmentation, Classification)</li>
+                    <li class="skills__list-item">NLP (NLTK, Spacy)</li>
+                </ul>
+            </div>
+            <div class="skills__category skills__category--learning">
+                <h3 class="skills__category-title">Currently Learning</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item">
+                        <label class="skills__list-item-label" for="genAI">Generative AI</label>
+                        <progress class="skills__progress" id="genAI" value="25" max="100"></progress>
+                    </li>
+                    <li class="skills__list-item">
+                        <label class="skills__list-item-label" for="nlp">NLP</label>
+                        <progress class="skills__progress" id="nlp" value="40" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skills__table">
+            <h3 class="skills__table-title">Skill Proficiency</h3>
+            <table class="skills__table-content">
+                <thead>
+                    <tr>
+                        <th class="skills__table-header">Technology</th>
+                        <th class="skills__table-header">Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="skills__table-data">Software Development</td>
+                        <td class="skills__table-data" rowspan="2">Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td class="skills__table-data">Software Quality Testing</td>
+                    </tr>
+                    <tr>
+                        <td class="skills__table-data">Artificial Intelligence</td>
+                        <td class="skills__table-data">Basic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <!--Section: Projects-->
-    <section id="projects" class="card">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><a target="blank" href="https://github.com/Anjoomnur0901/Brain-MRI-Tumor-Detection-for-Clinical-Research/tree/main">Brain Tumor Detection for Clinical Research</a><br>
-            <img src="./images/pituitary_image (3).png" alt="" height="100"/>
-            <img src="./images/pituitary_image (2).png" alt="" height="100"/>
-            <video  width="320"  controls ><source src="assets\video\big_buck_bunny_720p_1mb.mp4" type="video/mp4">Your Video do not support this type of video</video><!--type="video/mp4"-->
+        <ul class="projects__cards">
+   
+            <li class="projects__card-item">
+                <a class="projects__title" target="_blank" href="https://github.com/Anjoomnur0901/Parkinson-Disease-Prediction"><strong>Parkinson-Disease-Prediction Using various Mahine Learning Model</strong></a>
+                <p class="projects__card--desc">In my Parkinson's disease prediction project, I implemented various machine learning models,
+                    including Logistic Regression, Decision Tree Classifier, K-Nearest-Neighbour Classifier, Random Forest,
+                    Adaboost Classifier, and Gradient Boosting Classifier. To address the challenge of imbalanced data, I
+                    utilized the SMOTE technique. Additionally, I ensured the accuracy and reliability of the models by
+                    scaling and preprocessing the data.</p>
+            </li>
+            <li class="projects__card-item">
+                <a class="projects__title" target="_blank" href="https://github.com/Anjoomnur0901/Brain-MRI-Tumor-Detection-for-Clinical-Research/tree/main"><strong>Brain Tumor Detection for Clinical Research</strong></a>
+                <div class="projects__card-content">
+                    <div class="projects__card-images">
+                        <img src="./images/pituitary_image (3).png" alt="Brain Tumor Detection Image 1" class="projects__image"/>
+                        <img src="./images/pituitary_image (2).png" alt="Brain Tumor Detection Image 2" class="projects__image"/>
+                    </div>
+                    <p class="projects__card--desc">This project detects tumors from Brain MRI and identifies the type of tumor. We used YOLOv8 to build this detection model.</p>
+                </div>
+            </li>
+            <li class="projects__card-item">
+                <a class="projects__title" target="_blank" href="https://github.com/Anjoomnur0901/Brain-MRI-Tumor-Auto-Segmentation-and-Annotation-Tool"><strong>Auto Segmentation and Annotation Tool for Brain Tumor</strong></a>
+                <p class="projects__card--desc">This annotation tool facilitates the preparation of images for segmentation tasks, specifically focusing on brain tumors. Built using the SAM (Segment Anything Model) from the Ultralytics package, this tool automates the annotation process, eliminating the need for manual labeling.</p>
+            </li>
+            <li class="projects__card-item">
+                <a class="projects__title" target="_blank" href="https://github.com/Anjoomnur0901/Backend-Development-basic-using-Express-and-Mongoose"><strong>CRUD using Express and Mongoose</strong></a>
+                <p class="projects__card--desc">User CRUD operation where backend REST API is created using express js and connected to a MongoDB Database utilizing MVC architechture.</p>
+            </li>
+            <li class="projects__card-item">
+                <a class="projects__title" target="_blank" href="https://github.com/Anjoomnur0901/Metro-Rail-QR-Code-Ticketing-System-CSE299-Project"><strong>Metro-Rail-QR-Code-Ticketing-System</strong></a>
+                <p class="projects__card--desc">We have created a web-based Train Ticket Management System based on the latest Metro Rail Project in Dhaka. Our target is to create a reliable and fast experience for all the Metro Rail passengers, Taking a step ahead towards the visionary project of Digital Bangladesh. Our web-based application is fully functional with some very minor bugs and it is visually pleasing. It was built intending to have two kinds of users not just the passengers but also the trainmasters. Our webApp has bunch of functionalities that makes the lives of both passengers and trainmasters much easier as it makes their experience fluid and reduces their daily hassles. Passengers no longer need to stand in a line to wait for to buy tickets. They can now buy tickets online through our app very easily and that’s not all. Passenger doesn’t need to carry a physical ticket either as we’ve implemented a very useful digital ticket feature which has QR Code implemented that can be downloaded in the passenger’s phone right after the payment.</p>
             </li>
         </ul>
     </section>
+    
     </main>
    
     <!--Section: footer-->
@@ -239,11 +283,9 @@
         <div class="social-media">
             <h3>Follow Me</h3>
             <ul>
-                <li><a target="blank" href="https://github.com/Anjoomnur0901"><i class="fa-brands fa-linkedin"></i>GitHub</a></li>
-                <li><a> <a target="blank" href="https://www.linkedin.com/in/anjoom-nur-741b0b223/"><i class="fa-brands fa-github"></i>Linkedin</a></a></li>
+                <li><a target="blank" href="https://github.com/Anjoomnur0901"><i class="fa-brands fa-github" ></i>GitHub</a></li>
+                <li><a target="blank" href="https://www.linkedin.com/in/anjoom-nur-741b0b223/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
             </ul>
-            
-           
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983526!2d90.34355869969482!3d23.794562358241187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1723533344164!5m2!1sen!2sbd" 
