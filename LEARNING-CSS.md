@@ -18,11 +18,11 @@
 11. Box Shadow
 12. background-property(color,image)
 13. bam architecture(child class= parentclass__childclass)
-14. Basic Layout: display property- inline,block,inline-block, float, positioning, flex
+14. Basic Layout: display property- inline,block,inline-block, float, positioning, flex(flexbox froggy to practice)
 15. responsiveness
 
 ## Advanced CSS
-16. grid layout
+16. grid layout(use grid garden to practice)
 17. transition
 18. animation
 19. BEM architecture
