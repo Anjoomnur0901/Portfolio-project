@@ -14,3 +14,15 @@
 9. CSS3 Variables
 10. Designing a card
 
+## Intermediate CSS
+11. Box Shadow
+12. background-property(color,image)
+13. bam architecture(child class= parentclass__childclass)
+14. Basic Layout: display property- inline,block,inline-block, float, positioning, flex
+15. responsiveness
+
+## Advanced CSS
+16. grid layout
+17. transition
+18. animation
+19. BEM architecture

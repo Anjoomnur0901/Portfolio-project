@@ -1,0 +1,125 @@
+.intro{
+    height: 85vh;
+    background-image: url(images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.intro__desc{
+    color:white;
+}
+button{
+    display: block; /* converting inline element to a block element*/
+                    /*padding-top doesnt work for inline elements. To use padding-top convert to block element
+                    If we want inline element that works like block element use inline-block*/ 
+}
+
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 0.5rem red solid;
+    display: inline-block;
+    padding-top: 5rem;
+}
+
+.demo{
+    position:static;/*fixed, sticky*/
+}
+header{
+    background-color: #4caf50;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*<div class="parent">
+    <div class="child">
+        I am a child
+    </div>
+   </div>*/
+
+.parent{
+    background-color: red;
+    height:10rem;
+    position: relative; /* normal*/
+}
+.child{
+    background-color: green;
+    height: 3rem;
+    width: 10 rem;
+    position: absolute; 
+    top: 50%; /*go 50% down from top of parent*/
+    transform: translate(-50%, -50%); /*centered relative to parent class*/
+}
+/*to make circle height and width should be same and border-radius:50%*/
+/*display flex property*/
+/*<div class="parent">
+    <div class="div">
+        div1
+    </div>
+    <div class="div">
+        div2
+    </div>
+    <div class="div">
+        div3
+    </div>
+   </div>*/
+.parent{
+    background-color: red;
+    height: 30rem;
+    display: flex; /*by default flex direction is row. flex should always be used in parent container*/
+    /*flex-direction:column; to make it column wise*/
+    justify-content: center;/*by default left aligned, boxes wil be centered. we can also use right. This is row wise*/
+    align-items:center;/*column wise. opposite of justify content*/
+}
+.div{
+    background-color:green;
+    margin: 1rem;
+    height: 8rem;
+    width: 15rem;
+}
+
+/*responsiveness*/
+@media screen and (max-width:1200px){
+    body{
+        background-color:green;
+    }
+   
+}
+@media screen and (max-width:900px){
+    body{
+        background-color:red;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        background-color:blue;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color:pink;
+    }
+    
+}
+/*
+<footer>
+    <div class="footer__left">
+        <p> first paragraph </p>
+         <p>second paragraph </p>
+    </div>
+</footer>
+*/
+/* Selecting first p in different ways
+.footer__left + p{
+
+} 
+
+.footer__left:first-child{
+    
+} */
